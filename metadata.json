@@ -1,0 +1,5 @@
+{
+  "name": "Escapade Locale",
+  "description": "Découvrez les marchés, brocantes, escape games et fêtes locales autour de vous pour organiser vos vacances sans rien rater.",
+  "requestFramePermissions": ["geolocation"]
+}
