@@ -20,7 +20,7 @@ export interface SearchParams {
 }
 
 export async function searchActivities(params: SearchParams): Promise<Activity[]> {
-  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
   
   const prompt = `Trouve des activités à faire à ${params.location} et dans un rayon de ${params.radius}km entre le ${params.startDate} et le ${params.endDate}.
   Je recherche spécifiquement :
