@@ -61,7 +61,7 @@ export default function App() {
     setGroundingChunks([]);
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       
       const prompt = `Je planifie un voyage à ${location || 'ma position actuelle'} du ${startDate} au ${endDate}.
       Je souhaite découvrir les activités suivantes dans un rayon de ${radius}km :
